@@ -3,7 +3,7 @@ import { Text, View } from 'react-native'
 
 const Home: FC = () => {
   return (
-    <View>
+    <View className='items-center justify-center'>
       <Text>Home</Text>
     </View>
   )
