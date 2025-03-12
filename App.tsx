@@ -7,6 +7,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import AuthProvider from '@/providers/AuthProvider';
 import Toast from '@/components/ui/Toast';
 import { QueryClientProvider,QueryClient } from '@tanstack/react-query';
+import Home from '@/components/screens/home/Home';
 
 const queryClient = new QueryClient({
 	defaultOptions: {
@@ -18,6 +19,8 @@ const queryClient = new QueryClient({
 
 export default function App() {
   return (
+    <>
+    <Home />
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
         <SafeAreaProvider>
@@ -27,6 +30,7 @@ export default function App() {
       </AuthProvider>
       <StatusBar style="light" />
       <Toast />
-    </QueryClientProvider>
+  </QueryClientProvider>
+    </>
   );
 }

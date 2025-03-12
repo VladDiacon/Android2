@@ -7,11 +7,13 @@ import { useAuth } from '@/hooks/useAuth'
 
 import { TypeRootStackParamList } from './navigation.types'
 import { routes } from './routes'
+import Home from '@/components/screens/home/Home'
 
 const Stack = createNativeStackNavigator<TypeRootStackParamList>()
 
 const PrivateNavigator: FC = () => {
 	const { user } = useAuth()
+	
 
 	return (
 		<Stack.Navigator

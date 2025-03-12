@@ -10,26 +10,31 @@ import Explorer from '@/components/screens/explorer/Explorer'
 import Profile from '@/components/screens/profile/Profile'
 
 export const routes: IRoute[] = [
+	
 
 	{
 		name: 'Home',
 		component: Home
 	},
-	// {
-	// 	name: 'Favorites',
-	// 	component: Favorites
-	// },
-	// {
-	// 	name: 'Search',
-	// 	component: Search
-	// },
-	// {
-	// 	name: 'Explorer',
-	// 	component: Explorer
-	// },
-	// {
-	// 	name: 'Profile',
-	// 	component: Profile
-	// },
+	{
+		name: 'Auth',
+		component: Auth
+	},
+	{
+		name: 'Favorites',
+		component: Favorites
+	},
+	{
+		name: 'Search',
+		component: Search
+	},
+	{
+		name: 'Explorer',
+		component: Explorer
+	},
+	{
+		name: 'Profile',
+		component: Profile
+	},
 
 ]
