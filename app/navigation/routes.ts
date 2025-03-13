@@ -8,6 +8,7 @@ import Auth from '@/components/screens/auth/Auth'
 import Favorites from '@/components/screens/favorites/Favorites'
 import Explorer from '@/components/screens/explorer/Explorer'
 import Profile from '@/components/screens/profile/Profile'
+import Category from '@/components/screens/category/Category'
 
 export const routes: IRoute[] = [
 	
@@ -36,5 +37,9 @@ export const routes: IRoute[] = [
 		name: 'Profile',
 		component: Profile
 	},
-
+	{
+		name: 'Category',
+		component: Category
+	},
+	
 ]

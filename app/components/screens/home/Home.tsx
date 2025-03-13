@@ -1,12 +1,21 @@
-import { FC } from 'react'
-import { Text, View } from 'react-native'
+import React, { FC } from 'react'
+
+import Layout from '@/components/layout/Layout'
+
+import Header from './Header'
+import Banner from './banner/Banner'
+import Categories from './categories/Categories'
+import Products from './products/Products'
 
 const Home: FC = () => {
-  return (
-    <View className='items-center justify-center'>
-      <Text>Home</Text>
-    </View>
-  )
+	return (
+		<Layout>
+			<Header />
+			<Banner />
+			<Categories />
+			<Products/>
+		</Layout>
+	)
 }
 
 export default Home

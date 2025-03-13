@@ -8,6 +8,7 @@ import { useAuth } from '@/hooks/useAuth'
 import { TypeRootStackParamList } from './navigation.types'
 import { routes } from './routes'
 import Home from '@/components/screens/home/Home'
+import Profile from '@/components/screens/profile/Profile'
 
 const Stack = createNativeStackNavigator<TypeRootStackParamList>()
 
@@ -29,7 +30,7 @@ const PrivateNavigator: FC = () => {
 					<Stack.Screen key={route.name} {...route} />
 				))
 			) : (
-				<Stack.Screen name='Auth' component={Auth} />
+				<Stack.Screen name='Auth' component={Home} />
 			)}
 		</Stack.Navigator>
 	)
