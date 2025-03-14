@@ -1,3 +1,4 @@
+import { IProduct } from "./product.interface"
 
 
 export interface IUser {
@@ -6,5 +7,5 @@ export interface IUser {
 	password: string
 	name: string
 	avatarPath: string
-	favorites :any
+	favorites :IProduct[]
 }
